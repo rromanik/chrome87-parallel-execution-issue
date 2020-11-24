@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel Tests Execution" verbose="1">
+
+    <test name="Parallel Tests" parallel="methods">
+        <classes>
+            <class name="nik.roma.test.TakeScreenshotChromeTest" />
+<!--            <class name="nik.roma.test.TakeScreenshotFirefoxTest" />-->
+        </classes>
+    </test>
+</suite>
