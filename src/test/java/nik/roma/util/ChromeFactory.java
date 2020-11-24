@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class ChromeFactory {
 
 	static {
+//		System.setProperty("webdriver.chrome.logfile", "D:\\chromedriver.log");
+//		System.setProperty("webdriver.chrome.verboseLogging", "true");
 		WebDriverManager.chromedriver().setup();
 	}
 

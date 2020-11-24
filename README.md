@@ -19,3 +19,17 @@ To reproduce the issue, run:
 mvn clean test -Dtestng.dtd.http=true
 ```
 
+**NOTE 1**
+The issue is not reproduce if Chrome runs in the 'headless' mode. To run the tests with headless chrome,
+ go to 'ChromeFactory.java' and uncomment line 18:
+ ```
+ options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1080");
+```
+After that, run the same command `mvn clean test -Dtestng.dtd.ttp=true`
+
+**NOTE 2**
+The same test can be executed in Firefox browser. Just go to 'testng.xml', comment the chrome test
+`<class name="nik.roma.test.TakeScreenshotChromeTest" />` and uncomment the firefox test
+`<class name="nik.roma.test.TakeScreenshotFirefoxTest" />`
+and run the same command `mvn clean test -Dtestng.dtd.http=true`
+
