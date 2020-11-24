@@ -33,3 +33,7 @@ The same test can be executed in Firefox browser. Just go to 'testng.xml', comme
 `<class name="nik.roma.test.TakeScreenshotFirefoxTest" />`
 and run the same command `mvn clean test -Dtestng.dtd.http=true`
 
+**Update**
+I logged an issue https://bugs.chromium.org/p/chromedriver/issues/detail?id=3664&sort=-pri%20-id&q=&can=1
+which turned out to be a duplicate of https://bugs.chromium.org/p/chromedriver/issues/detail?id=3657&sort=-pri%20-id&q=&can=1
+
